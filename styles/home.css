@@ -111,3 +111,16 @@
   text-align: center;
 }
 
+/* SWITCHER */
+
+#label-switcher i {
+  position: absolute;
+  top: 52px;
+  right: 2%;
+  font-size: 20px;
+  transition: 500ms;
+}
+
+#label-switcher i:hover {
+  cursor: pointer;
+}
