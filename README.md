@@ -52,6 +52,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 -   [HTML][html]
 -   [CSS][css]
+-   [Javascrip][javascript]
 
 ## 🔖 Layout
 
@@ -86,3 +87,7 @@ Este projeto está sob licença MIT, para mais detales verifique em [LICENSE](..
     <img alt="Instagram" src="https://img.shields.io/badge/Instagram-@brunnosena-833AB4?style=flat&logoColor=white&logo=instagram">
   </a>
 </p>
+
+[html]: https://www.w3schools.com/html/
+[css]: https://www.w3schools.com/css/
+[javascript]: https://pt.wikipedia.org/wiki/JavaScript
