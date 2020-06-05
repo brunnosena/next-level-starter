@@ -1,11 +1,5 @@
-:root {
-  --title-color: #322153;
-  --primary-color: #34cb79;
-  --in-color: #f0f0f5;
-}
-
 #modal {
-  background-color: #0e0a14ef;
+  background-color: #0E0A14e5;
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -13,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 400ms;
+  transition: 0.5s;
 }
 
 #modal.hide {
@@ -29,10 +23,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 #modal .header a {
-  background-image: url(../assets/x.svg);
+  background-image: url("../img/x.svg");
   width: 20px;
   height: 20px;
   display: flex;
@@ -42,11 +37,10 @@
 #modal .header h1 {
   color: white;
   font-size: 36px;
-  line-height: 42px;
-  margin-bottom: 48px;
+  line-height: 36px;
 }
 
-#modal form label {
+#modal form label{
   font-size: 14px;
   line-height: 16px;
   display: block;
@@ -59,12 +53,13 @@
 
 #modal form input {
   flex: 1;
-  background-color: var(--in-color);
-  border-radius: 8px 0 0 8px;
+  background-color: #f0f0f5;
+  border-radius: 8px;
   border: 0;
   padding: 16px 24px;
   font-size: 16px;
   color: #6c6c80;
+  outline-color: var(--primary-color);
 }
 
 #modal form button {
@@ -76,17 +71,18 @@
 }
 
 #modal form button:hover {
-  background-color: #2fb85e;
+  background-color: #2fb86e;
 }
 
+/* Isto é para o modal point created */
+#modal.point .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+#modal.point h1 { 
+  color: white;
 
-
-
-
-
-
-
-
-
-
+  margin-top: 32px;
+}

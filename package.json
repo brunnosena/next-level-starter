@@ -1,0 +1,36 @@
+{
+    "name": "starter",
+    "version": "1.0.0",
+    "main": "src/server.js",
+    "license": "MIT",
+    "author": {
+        "name": "Brunno Sena",
+        "email": "brunnow@hotmail.com"
+    },
+    "keywords": [
+        "starter",
+        "nwl",
+        "next week level",
+        "roketseat"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:brunnosena/next-level-starter.git"
+    },
+    "homepage": "https://github.com/brunnosena/next-level-starter/tree/master/%231%20NLW/Starter",
+    "bugs": {
+        "url": "https://github.com/brunnosena/next-level-starter/issues"
+    },
+    "scripts": {
+        "start": "node src/server.js",
+        "dev": "nodemon src/server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "nunjucks": "^3.2.1",
+        "sqlite3": "^4.2.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}

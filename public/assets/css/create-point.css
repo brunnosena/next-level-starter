@@ -7,8 +7,8 @@
 #page-create-point header {
   margin-top: 48px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 #page-create-point header a {
@@ -19,23 +19,24 @@
 }
 
 #page-create-point header a span {
-  margin-right: 16px;
-  background-image: url("../assets/arrow-left.svg");
+  background-image: url("../img/arrow-left.svg");
   width: 20px;
-  height: 24px;
+  height: 26px;
   display: flex;
+  margin-right: 16px;
 }
 
 form {
-  background-color: #fff;
-  margin: 80px auto;
+  background: white;
   padding: 64px;
   border-radius: 8px;
   max-width: 730px;
+  margin: 80px auto;
 }
 
 form h1 {
   font-size: 36px;
+  text-align: center;
 }
 
 form fieldset {
@@ -45,16 +46,25 @@ form fieldset {
 
 form legend {
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 form legend h2 {
   font-size: 24px;
 }
 
+form legend span {
+  font-size: 14px;
+  color: var(--title-color);
+}
+
 form .field {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  flex: 1;
   margin-bottom: 24px;
 }
 
@@ -62,13 +72,13 @@ form .field-group {
   display: flex;
 }
 
-form input,
-form select {
-  background-color: #f0f0f5;
+form input, form select{
+  background: #f0f0f5;
   border: 0;
   padding: 16px 24px;
   font-size: 16px;
   border-radius: 8px;
+  outline-color: var(--primary-color);
 }
 
 form select {
@@ -82,79 +92,62 @@ form label {
   margin-bottom: 8px;
 }
 
-form .field-group .field + .field {
-  margin-left: 24px;
+form .field + .field {
+  margin-left: 20px;
 }
 
 form button {
   width: 260px;
   height: 56px;
-  margin-top: 40px;
-  font-weight: bold;
-  font-size: 16px;
+
   background-color: var(--primary-color);
-  color: #fff;
-  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
   border-radius: 8px;
-  transition: background-color 400ms;
+  border: 0;
+  transition: 0.5s;
+  margin-top: 40px;
 }
 
 form button:hover {
-  background-color: #2fb86e;
+    background-color: #2fb86e;
 }
 
-/* Switcher */
-#switcher {
-  display: none;
-}
-
-#label-switcher i {
-  position: absolute;
-  top: 52px;
-  right: 2%;
-  font-size: 20px;
-  transition: 500ms;
-}
-
-#label-switcher i:hover {
-  cursor: pointer;
-}
-
-.items-grid {
+.itens-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
 }
 
-.items-grid li {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 180px;
-  list-style: none;
+.itens-grid li {
   background-color: #f5f5f5;
+  list-style: none;
   border: 2px solid #f5f5f5;
   border-radius: 8px;
+  height: 180px;
   padding: 32px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
   cursor: pointer;
 }
 
-.items-grid li span {
-  display: flex;
-  flex: 1;
-  align-items: center;
+.itens-grid li span {
   margin-top: 12px;
+  flex: 1;
+  display: flex;
+  align-items: center;
   color: var(--title-color);
 }
 
-.items-grid li.selected {
-  background-color: #e1faec;
+.itens-grid li.selected {
+  background: #e1faec;
   border: 2px solid #34cb79;
 }
 
-.items-grid li img,
-.items-grid li span {
+.itens-grid li img, .itens-grid li span {
   pointer-events: none;
 }
