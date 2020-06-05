@@ -54,7 +54,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 -   [CSS][css]
 -   [Javascript][javascript]
 -   [NodeJS][nodejs]
--   [sqlite3][sqlite3]
+-   [SQLite3][sqlite3]
 
 ## 🔖 Layout
 
@@ -92,6 +92,6 @@ Este projeto está sob licença MIT, para mais detales verifique em [LICENSE](..
 
 [html]: https://www.w3schools.com/html/
 [css]: https://www.w3schools.com/css/
-[javascript]: https://www.w3schools.com/javascript
+[javascript]: https://www.w3schools.com/js/
 [nodejs]: https://nodejs.dev/
 [sqlite3]: https://www.sqlite.org
